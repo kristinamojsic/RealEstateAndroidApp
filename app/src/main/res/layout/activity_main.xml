@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/pozadina"
+    android:layout_gravity="center_horizontal"
+    tools:context=".MainActivity">
+<TextView
+    android:id="@+id/dobrodosli"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_marginTop="50dp"
+    android:textSize="15pt"
+
+    android:layout_gravity="center"
+    android:textColor="@color/babyred">
+
+</TextView>
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/house"
+        android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_marginTop="20pt">
+        <TextView
+            android:layout_marginLeft="2pt"
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Želite da postavite oglas?"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/tvPrijava"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Prijavite se"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etMesto"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_marginTop="10pt"
+
+        android:textAlignment="center"
+        android:layout_marginBottom="10dp"
+        android:background="@color/background"
+        android:textSize="20sp"
+        android:textColor="@color/colorTextPrimary"
+        android:hint="Pretražite mesto"
+        />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioNamena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="5pt"
+        android:orientation="horizontal">
+        <RadioButton android:id="@+id/radioIznajmljivanje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Iznajmljivanje"
+            android:onClick="onRadioButtonNamenaClicked"/>
+        <RadioButton android:id="@+id/radioKupovina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kupovina"
+            android:onClick="onRadioButtonNamenaClicked"/>
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioTip"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="5pt">
+
+        <RadioButton
+
+            android:id="@+id/radioStanovi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonTipClicked"
+            android:text="Stanovi" />
+
+        <RadioButton
+            android:id="@+id/radioKuce"
+            android:layout_marginLeft="5pt"
+            android:layout_marginRight="10pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonTipClicked"
+            android:text="Kuće" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnPretraga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/babyred"
+        android:textColor="@color/pozadina"
+        android:textSize="18sp"
+        android:layout_marginTop="10pt"
+        android:layout_gravity="center_horizontal"
+        android:text="Pretraga ponuda" />
+
+
+
+
+
+</LinearLayout>

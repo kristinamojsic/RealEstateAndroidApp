@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/pozadina"
+    android:layout_gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/house"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prijava"
+        android:textSize="24sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/username"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/colorTextPrimary"
+        android:hint="email"
+        android:drawableStart="@drawable/username" />
+
+    <EditText
+        android:id="@+id/etSifra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="šifra"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/password"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/colorTextPrimary"
+        android:drawableStart="@drawable/password" />
+
+    <Button
+        android:id="@+id/btnPrijava"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/babyred"
+        android:textColor="@color/pozadina"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        android:text="prijava" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Niste član?"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/tvRegistracija"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registrujte se"
+            android:textSize="18sp"
+            android:textColor="@color/colorTextPrimary"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp" ></TextView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:padding="10dp"
+
+    android:layout_gravity="center_horizontal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/tipNekretnine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/kuca"
+                    android:layout_width="350px"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Kuća"
+                    android:textSize="8pt"
+                    android:onClick="TipClicked">
+
+                </RadioButton>
+                <RadioButton
+                    android:id="@+id/stan"
+                    android:layout_width="300px"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Stan"
+                    android:textSize="8pt"
+                    android:onClick="TipClicked">
+
+                </RadioButton>
+            </RadioGroup>
+            <RadioGroup
+                android:id="@+id/namenaNekretnine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/prodaja"
+                    android:layout_width="350px"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Za prodaju"
+                    android:textSize="8pt"
+                    android:onClick="NamenaClicked">
+
+                </RadioButton>
+                <RadioButton
+                    android:id="@+id/izdavanje"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Za izdavanje"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="8pt"
+                    android:onClick="NamenaClicked">
+
+                </RadioButton>
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/etNaziv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="10dp"
+                android:hint="Naslov oglasa"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/etAdresa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="10dp"
+                android:hint="Adresa na kojoj se nekretnina nalazi"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/etGrad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="10dp"
+                android:hint="Grad u kom se nekretnina nalazi"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="20sp"
+
+                />
+
+            <EditText
+                android:id="@+id/etPovrsina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+
+
+                android:hint="Površina nekretnine(m^2)"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/etbrojSoba"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+
+
+                android:hint="Broj prostorija"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Nameštenost?"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="20sp" />
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioDa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="Da" />
+
+                    <RadioButton
+                        android:id="@+id/radioNe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="Ne" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/etInfrastruktura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+
+
+                android:hint="Infrastruktura"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/etCena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+
+
+                android:hint="Cena (u evrima)"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="20sp" />
+
+
+
+
+
+            <EditText
+                android:id="@+id/etOpis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+
+
+                android:hint="Dodatni opis(nije obavezno)"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnDodajSlike"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/pozadina"
+                android:gravity="center"
+                android:text="dodaj slike"
+                android:textColor="@color/babyred"
+                android:textSize="18sp" />
+
+
+            <ImageSwitcher
+                android:id="@+id/imageSwitcher"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+
+                android:layout_marginLeft="125dp" />
+
+            <!--click here to view previous image-->
+            <Button
+                android:id="@+id/prethodna"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/pozadina"
+                android:textColor="@color/babyred"
+                android:layout_marginTop="20dp"
+                android:text="Prethodna" />
+
+            <!--click here to view next image-->
+            <Button
+                android:id="@+id/sledeca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/pozadina"
+                android:textColor="@color/babyred"
+                android:layout_marginTop="20dp"
+                android:text="Sledeća" />
+
+            <Button
+                android:id="@+id/btnPostavi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:backgroundTint="@color/babyred"
+                android:textColor="@color/pozadina"
+                android:textSize="18sp"
+                android:text="Postavi oglas" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

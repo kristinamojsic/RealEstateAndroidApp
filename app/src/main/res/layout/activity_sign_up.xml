@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/pozadina"
+    android:layout_gravity="center_horizontal">
+    <!--tools:context=".SignupActivity"-->
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/house"
+        android:layout_gravity="center_horizontal"/>
+
+    <EditText
+        android:id="@+id/etIme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/colorTextPrimary"
+        android:hint="Ime"
+        />
+    <EditText
+        android:id="@+id/etPrezime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/colorTextPrimary"
+        android:hint="Prezime"
+        />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/colorTextPrimary"
+        android:hint="Email"
+
+        />
+
+    <EditText
+        android:id="@+id/editTextSifra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Šifra"
+        android:inputType="textPassword"
+
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/colorTextPrimary"
+        />
+
+    <EditText
+        android:id="@+id/etPotvrdiSifru"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Potvrdi šifru"
+        android:inputType="textPassword"
+
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/colorTextPrimary"
+        />
+
+    <EditText
+        android:id="@+id/etTelefon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kontakt telefon"
+
+
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/colorTextPrimary"
+        />
+
+    <Button
+        android:id="@+id/btnRegistracija"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:backgroundTint="@color/babyred"
+        android:textColor="@color/pozadina"
+        android:textSize="18sp"
+        android:text="registracija" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Već imate nalog?"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tvPrijava"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prijavite se ovde"
+            android:textSize="18sp"
+            android:textColor="@color/colorTextPrimary"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp" />
+    </LinearLayout>
+
+</LinearLayout>

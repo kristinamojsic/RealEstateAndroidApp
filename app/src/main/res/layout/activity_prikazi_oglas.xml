@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pozadina"
+    android:orientation="vertical"
+    android:padding="10dp">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/naslov"
+        android:textStyle="bold|italic"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Naslov"
+        android:textSize="15pt"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/tip"
+        android:layout_marginTop="7pt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tip"
+        android:textSize="10pt"
+        />
+    <TextView
+        android:id="@+id/namena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="namena"
+        android:textSize="10pt"
+        />
+    <TextView
+        android:id="@+id/namestenost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="namestenost"
+        android:textSize="10pt"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/adresa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="adresa,"
+            android:textSize="10pt"
+            />
+        <TextView
+            android:id="@+id/grad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="grad"
+            android:textSize="10pt"
+            android:layout_marginLeft="5pt"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/povrsina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="površina:"
+        android:textSize="10pt"
+        />
+    <TextView
+        android:id="@+id/cena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cena:"
+        android:textSize="10pt"
+        />
+
+  <androidx.viewpager.widget.ViewPager
+
+      android:id="@+id/viewPager"
+      android:layout_width="wrap_content"
+      android:layout_height="320dp"
+
+      android:layout_gravity="center">
+  </androidx.viewpager.widget.ViewPager>
+  
+
+
+    <TextView
+        android:id="@+id/brojSoba"
+        android:layout_marginTop="8pt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="broj soba:"
+        android:textSize="10pt"
+        />
+    <TextView
+        android:id="@+id/infrastruktura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5pt"
+        android:text="infrastruktura:"
+        android:textSize="10pt"
+        />
+
+    <TextView
+        android:id="@+id/opis"
+        android:layout_marginTop="5pt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="opis:"
+        android:textSize="10pt"
+        />
+
+    <TextView
+        android:layout_margin="5pt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kontakt:"
+        android:textColor="@color/babyred"
+        android:textSize="12pt">
+
+    </TextView>
+    <TextView
+        android:layout_marginLeft="5pt"
+        android:id="@+id/imePrezime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ime i prezime:"
+        android:textSize="10pt"
+        />
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="email:"
+        android:textSize="10pt"
+        android:layout_marginLeft="5pt"
+        />
+    <TextView
+        android:id="@+id/broj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kontakt telefon:"
+        android:textSize="10pt"
+        android:layout_marginLeft="5pt"
+        />
+
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_marginTop="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nova lozinka"
+        android:textColor="@color/babyred"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+        <EditText
+            android:layout_margin="10dp"
+            android:id="@+id/tvNovaLozinka"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textColor="@color/colorTextSecondary"
+            android:textSize="18sp" />
+        <TextView
+
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Potvrdi lozinku"
+            android:textColor="@color/babyred"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_margin="10dp"
+            android:id="@+id/tvPotvrdiLozinku"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textColor="@color/colorTextSecondary"
+            android:textSize="18sp" />
+        <Button
+            android:id="@+id/btnPotvrdi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:backgroundTint="@color/babyred"
+            android:padding="10dp"
+            android:text="Potvrdi"
+
+            android:textColor="@color/pozadina"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

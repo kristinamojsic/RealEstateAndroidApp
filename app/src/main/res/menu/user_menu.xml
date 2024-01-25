@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/itemPretraga"
+        android:icon="@drawable/ic_baseline_house_24"
+        android:title="Pretraga oglasa"
+        />
+    <item android:id="@+id/itemPodesavanja"
+        android:icon="@drawable/ic_baseline_manage_accounts_24"
+        android:title="Podešavanja"
+        />
+    <item android:id="@+id/itemDodajOglas"
+        android:icon="@drawable/ic_baseline_add_24"
+        android:title="Dodaj oglas" />
+    <item android:id="@+id/itemMojiOglasi"
+        android:icon="@drawable/ic_baseline_work_24"
+        android:title="Moji oglasi" />
+    <item android:id="@+id/itemOdjaviSe"
+        android:icon="@drawable/ic_baseline_logout_24"
+        android:title="Odjavi se" />
+
+</menu>
